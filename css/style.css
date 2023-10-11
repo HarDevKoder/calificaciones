@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'miFuente';
+  src: url('../fuentes/avenir.ttf');
+}
+
+html{
+  font-family: miFuente;
+}
+
+body{
+  background: rgb(230, 248, 248);
+}
+
+.contenedorGeneral{
+  border: 1px solid silver;
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.escudo{
+  width: fit-content;
+  height: 160px;
+  margin: auto;
+}
+
+.escudo img{
+  width: 100%;
+  height: 100%;
+}
+
+.titulo{
+  text-align: center;
+  padding: 10px;
+  color: #8F3F40;
+  margin-bottom: 10px;
+}
+
+.alumno{
+  color: #4604EB;
+  padding: 10px;
+}
+
+.notas{
+  padding: 10px;
+}
+
+.items{
+  padding: 10px; 
+}
+
+button{
+  padding: 5px;
+  background: #050095;
+  color: azure;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
