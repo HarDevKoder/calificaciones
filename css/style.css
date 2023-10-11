@@ -1,23 +1,23 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 @font-face {
-  font-family: 'miFuente';
-  src: url('../fuentes/avenir.ttf');
+  font-family: "miFuente";
+  src: url("../fuentes/avenir.ttf");
 }
 
-html{
+html {
   font-family: miFuente;
 }
 
-body{
+body {
   background: rgb(230, 248, 248);
 }
 
-.contenedorGeneral{
+.contenedorGeneral {
   border: 1px solid silver;
   height: 100%;
   width: 80%;
@@ -25,41 +25,41 @@ body{
   padding: 20px;
 }
 
-.escudo{
+.escudo {
   width: fit-content;
   height: 160px;
   margin: auto;
 }
 
-.escudo img{
+.escudo img {
   width: 100%;
   height: 100%;
 }
 
-.titulo{
+.titulo {
   text-align: center;
   padding: 10px;
-  color: #8F3F40;
+  color: #8f3f40;
   margin-bottom: 10px;
 }
 
-.alumno{
-  color: #4604EB;
+.alumno {
+  color: #4604eb;
   padding: 10px;
 }
 
-.notas{
+.notas {
   border: 1px solid silver;
   padding: 10px;
   list-style-position: inside;
   text-align: center;
 }
 
-.listaNotas{
+.listaNotas {
   padding: 10px;
 }
 
-button{
+button {
   padding: 5px;
   background: #050095;
   color: azure;
@@ -68,7 +68,25 @@ button{
   margin: 10px 0;
 }
 
-.items{
+.items {
   padding: 10px;
 }
 
+@media (max-width: 600px) {
+  .contenedorGeneral {
+    width: 100%;
+  }
+
+  .escudo {
+    width: fit-content;
+    height: 160px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .escudo img {
+    width: 80%;
+  }
+}
