@@ -9,13 +9,13 @@ const btnIniciar = document.getElementById("btnIniciar");
 const btnNuevo = document.getElementById("btnNuevo");
 
 // Variables Globales
-let nombreAlumno;
+let nombreAlumno= '';
 let notasArray = [];
 let notas = "";
 let promedio = 0;
 let operacion = "";
 let notaMayor = 0;
-let hayAplazos = " ";
+let hayAplazos = "NO";
 
 // Función que solicita nombre del estudiante
 const solicitarNombre = () => {
@@ -26,7 +26,6 @@ const solicitarNombre = () => {
 // Función que solicita las notas del estudiante
 const solicitarNotas = () => {
   for (let i = 1; i <= 5; i++) {
-    // let nota = (Number(prompt(`Ingresa Nota ${i}: `))).toFixed(1);
     let nota = parseFloat(prompt(`Ingresa Nota ${i}: `)).toFixed(1);
     notasArray.push(nota);
   }
