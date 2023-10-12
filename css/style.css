@@ -74,12 +74,13 @@ button {
 
 @media (max-width: 600px) {
   .contenedorGeneral {
+    padding-top: 5px;
     width: 100%;
   }
 
   .escudo {
     width: fit-content;
-    height: 160px;
+    height: 100px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -87,6 +88,6 @@ button {
   }
 
   .escudo img {
-    width: 80%;
+    width: 35%;
   }
 }

@@ -71,24 +71,23 @@ const verificarAplazos = () => {
 };
 
 // Programa Principal
-
-btnNuevo.addEventListener("click", () => {
-  location.reload();
-});
-
 btnIniciar.addEventListener("click", () => {
-  solicitarNombre();
-  solicitarNotas();
-  listaNotas.innerHTML = mostrarNotas();
-  cajaItems.addEventListener("click", (event) => {
-    if (event.target.tagName === "BUTTON") {
-      operacion = event.target.textContent;
-      if (operacion === "Calcular promedio")
-        cajaPromedio.textContent = calcularPromedio();
-      if (operacion === "Mostrar nota más alta")
-        cajaNotaMasAlta.textContent = mostrarNotaMasAlta();
-      if (operacion === "Consultar Aplazos")
-        cajaAplazos.textContent = verificarAplazos();
-    }
-  });
+  if (notasArray.length !== 0) {
+    location.reload();
+  } else {
+    solicitarNombre();
+    solicitarNotas();
+    listaNotas.innerHTML = mostrarNotas();
+    cajaItems.addEventListener("click", (event) => {
+      if (event.target.tagName === "BUTTON") {
+        operacion = event.target.textContent;
+        if (operacion === "Calcular promedio")
+          cajaPromedio.textContent = calcularPromedio();
+        if (operacion === "Mostrar nota más alta")
+          cajaNotaMasAlta.textContent = mostrarNotaMasAlta();
+        if (operacion === "Consultar Aplazos")
+          cajaAplazos.textContent = verificarAplazos();
+      }
+    });
+  }
 });
