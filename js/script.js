@@ -26,7 +26,8 @@ const solicitarNombre = () => {
 // Función que solicita las notas del estudiante
 const solicitarNotas = () => {
   for (let i = 1; i <= 5; i++) {
-    let nota = (Number(prompt(`Ingresa Nota ${i}: `))).toFixed(1);
+    // let nota = (Number(prompt(`Ingresa Nota ${i}: `))).toFixed(1);
+    let nota = parseFloat(prompt(`Ingresa Nota ${i}: `)).toFixed(1);
     notasArray.push(nota);
   }
 };
@@ -55,7 +56,7 @@ const mostrarNotaMasAlta = () => {
     notaMayor = x > notaMayor ? x : notaMayor;
   }
   return notaMayor;
-};
+}
 
 // Función que determina si hay Aplazos
 const verificarAplazos = () => {
