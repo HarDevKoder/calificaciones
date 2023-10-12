@@ -90,4 +90,13 @@ button {
   .escudo img {
     width: 35%;
   }
+
+  button {
+    padding: 15px;
+    background: #050095;
+    color: azure;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+  }
 }
